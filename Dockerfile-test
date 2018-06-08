@@ -1,0 +1,29 @@
+FROM debian:jessie
+
+RUN \
+  apt-get update && \
+  # Test dependencies
+  apt-get -y install \
+    build-essential \
+    findutils \
+    libpcre3-dev \
+    lsof \
+    perl \
+    procps \
+    redis-server \
+    sudo \
+    unzip \
+    zlib1g-dev  && \
+  # Runtime dependencies
+  apt-get -y install \
+    bash \
+    coreutils \
+    curl \
+    diffutils \
+    grep \
+    openssl \
+    sed
+
+RUN mkdir /app
+WORKDIR /app
+COPY . /app
