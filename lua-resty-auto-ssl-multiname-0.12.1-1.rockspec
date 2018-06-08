@@ -1,8 +1,16 @@
+-- This file was automatically generated for the LuaDist project.
+
 package = "lua-resty-auto-ssl-multiname"
-version = "0.12.0-1"
+version = "0.12.1-1"
+-- LuaDist source
 source = {
-  url = "git://github.com/DEEP-IMPACT-AG/lua-resty-auto-ssl.git",
+  tag = "0.12.1-1",
+  url = "git://github.com/LuaDist-testing/lua-resty-auto-ssl-multiname.git"
 }
+-- Original source
+-- source = {
+--   url = "git://github.com/DEEP-IMPACT-AG/lua-resty-auto-ssl.git",
+-- }
 description = {
   summary = "Automatic SSL handling for OpenResty",
   detailed = "On the fly (and free) SSL registration and renewal inside OpenResty/nginx with Let's Encrypt.",
